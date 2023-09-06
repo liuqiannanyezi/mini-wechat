@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  Weixin{{ msg }}
+  <button bindtap="clickMe">点击我</button>
+  <map 
+    bindmarkertap="markertap"
+    longitude="广州经度" 
+    latitude="广州维度">
+  </map>
+  <span wx:for="{{ objArr }}" wx:key="item.a">
+    {{ item.a }}
+  </span>
+</view>
