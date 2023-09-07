@@ -1,19 +1,6 @@
 // index.js
 Page({
   data: { 
-    msg: 'hh',
-    text: 'This is page data.',
-    array: [1, 2, 3, 4, 5],
-    objArr: [{ a: 1, b: 2}, { a: 2, b: 3}]
-  },
-  clickMe: function() {
-    this.setData({ msg: "Hello World"})
-    const appInstance = getApp()
-    console.log('globalData', appInstance.globalData)
-  },
-  markertap: function (e) {
-    console.log('markertap')
-    console.log(e)
   },
   onLoad() {
     // 页面创建时执行
@@ -48,8 +35,4 @@ Page({
   onTabItemTap() {
     // tab 点击时执行
   },
-  // 自由数据
-  customData: {
-    hi: 'MINA'
-  }
 })
